@@ -1,0 +1,90 @@
+/* Sidebar.css */
+.sidebar {
+  width: 280px; /* Largeur de la barre */
+  height: 100vh; /* Toute la hauteur de l'écran */
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Reste fixe à gauche */
+  left: 0;
+  top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- En-tête (Partie Bleu Foncé) --- */
+.sidebar-header {
+  background-color: #1e4079; /* Couleur sombre de ton image */
+  padding: 25px 20px;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  color: #4da6ff; /* Goutte d'eau bleu clair */
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sidebar-header p {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+/* --- Menu de Navigation --- */
+.sidebar-nav {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 15px;
+}
+
+/* --- Style des Boutons --- */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 20px;
+  border-radius: 10px; /* Coins arrondis comme sur l'image */
+  text-decoration: none;
+  color: #555; /* Couleur gris foncé par défaut */
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+/* --- État Actif (Bouton Bleu) --- */
+.nav-item.active {
+  background-color: #3b82f6; /* Le bleu vif du bouton actif */
+  color: white;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* --- État au survol (Hover) --- */
+.nav-item:hover:not(.active) {
+  background-color: #f3f4f6;
+  color: #333;
+}
