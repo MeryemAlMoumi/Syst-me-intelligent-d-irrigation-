@@ -71,7 +71,7 @@ Si :
 
 👉 fuite détectée + alerte + localisation  
 
-📈 Précision : 85%
+📈 Précision : 71%
 
 ---
 
@@ -82,8 +82,6 @@ Si humidité < seuil :
 - calcul automatique du temps d’arrosage  
 - activation pompe  
 - arrêt automatique  
-
-📈 Précision : 92%
 
 ---
 
